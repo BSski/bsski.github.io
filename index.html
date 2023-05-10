@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERG: A Natural Ecosystem Simulation</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #333;
+        }
+
+        .left-content {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 50px;
+            padding-top: 150px;
+        }
+
+        .right-content {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+        }
+
+        #game-frame {
+            border: none;
+            width: 100%;
+            height: 75%;
+        }
+
+        .description {
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .green {
+            color: green;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 42px;
+            justify-content: center;
+            color: #F5F5F5;
+        }
+
+        p {
+            color: #F5F5F5;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #F5F5F5;
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            color: #F5F5F5;
+            text-align: left;
+            display: inline-block;
+            padding-left: 0;
+        }
+
+        li:before {
+            content: "⚬ ";
+            color: #009933;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="left-content">
+    <h1>SERG<span class="green">:</span> web preview</h1>
+    <div class="description">
+        <p>Control the environment to complete achievements and experience the dynamics of an alive ecosystem!</p>
+        <h2>Buttons:</h2>
+        <ul>
+            <li><b>Space:</b> Toggle pause</li>
+            <li><b>↑↓:</b> Cycle through achievements</li>
+            <li><b>R:</b> Reset simulation (new terrain & animals)</li>
+            <li><b>T:</b> Skip 8 days</li>
+            <li><b>123:</b> Change right panel option</li>
+        </ul>
+        <p>Click anywhere in the game window to enable the buttons.</p>
+<!--        <p>Download for free:<br>-->
+<!--        URL</p>-->
+    </div>
+</div>
+
+<div class="right-content">
+    <iframe id="game-frame" src="main.html" width="1050" height="650"></iframe>
+</div>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('bsski', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support Me',
+        'floating-chat.donateButton.background-color': '#f45d22',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
+</body>
+</html>
